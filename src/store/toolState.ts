@@ -11,6 +11,24 @@ class ToolState {
 	setTool(tool: Tool) {
 		this.tool = tool;
 	}
+
+	setFillColor(color: string) {
+		if (this.tool) {
+			console.log(10);
+			this.tool.fillColor = color;
+		}
+	}
+
+	setStrokeColor(color: string) {
+		if (this.tool) {
+			console.log(20);
+			this.tool.strokeColor = color;
+		}
+	}
+
+	setLineWidth(width: string) {
+		if (this.tool) this.tool.lineWidth = width;
+	}
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
